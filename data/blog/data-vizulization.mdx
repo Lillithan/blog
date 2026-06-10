@@ -1,0 +1,33 @@
+---
+title: Data Visualization
+date: '2026-06-03'
+tags: ['markdown', 'code', 'data visualization', 'JupiterLite']
+draft: false
+summary: Example of a markdown file with code blocks and syntax highlighting
+---
+
+## data viz
+
+
+TALK
+
+
+'''import pandas as pd
+import matplotlib.pyplot as plt
+import json
+from js import fetch
+
+async def get_json(url):
+    resp = await fetch(url)
+    txt = await resp.text()
+    return json.loads(txt)
+
+# Data Acquisition
+data = await get_json(
+    "https://api.census.gov/data/2026/cps/basic/feb?get=PEMLR,PWSSWGT,PEMARITL&for=state:*&PEEDUCA=39&key=b5707fefc3437eaa85f0f36b7b00c5528f74a3bd"
+)
+
+print("Raw data:")
+for i, row in enumerate(data):
+    print(f"Row {i}: {row}")
+'''
